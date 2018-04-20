@@ -25,7 +25,7 @@ TEST_CASE("Swap")
 
 TEST_CASE("Reset")
 {
-        scoped_ptr<int> p1(new int(6);
+        scoped_ptr<int> p1(new int(6));
         p1.reset(new int(5));								 
         int k = *p1;
         REQUIRE( k == 5 );
