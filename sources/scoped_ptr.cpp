@@ -1,4 +1,4 @@
-	#include "scoped_ptr.hpp"
+	/*#include "scoped_ptr.hpp"
 
 	template<typename T>
 	scoped_ptr<T>::scoped_ptr(T * ptr )
@@ -42,3 +42,4 @@
 	{
 		std::swap(ptr_, other.ptr_);
 	}
+*/
