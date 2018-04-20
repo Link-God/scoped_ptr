@@ -33,10 +33,6 @@ TEST_CASE("Reset")
                            
 TEST_CASE("->")
 {
-        struct X
-	{
-		int m;
-	};
         scoped_ptr<X> z(new X);
 	z->m = 3;
         int k = z->m;
