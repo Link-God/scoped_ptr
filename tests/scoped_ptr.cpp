@@ -16,7 +16,7 @@ TEST_CASE("Swap")
 {
         scoped_ptr<int> p1(new int(6));
         scoped_ptr<int> p2(new int(1));
-        p1.swap(p2)
+        p1.swap(p2);
         int * ptr = p1.get();
         int k = *p2;
         REQUIRE( *ptr == 1 );
