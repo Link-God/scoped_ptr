@@ -41,19 +41,19 @@ template<typename T>
 	}
 
 	template<typename T>
-	T & scoped_ptr<T>:: operator*() const
+	T& scoped_ptr<T>:: operator*() const
 	{
-		if (ptr_) return *ptr_;
+		/*if (ptr_)*/ return *ptr_;
 	}
 
 	template<typename T>
-	T * scoped_ptr<T>::operator->() const
+	T* scoped_ptr<T>::operator->() const
 	{
-		if (ptr_) return ptr_;
+		/*if (ptr_)*/ return ptr_;
 	}
 
 	template<typename T>
-	T * scoped_ptr<T>::get() const
+	T* scoped_ptr<T>::get() const
 	{
 		return ptr_;
 	}
