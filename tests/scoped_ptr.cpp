@@ -1,7 +1,6 @@
 #include <catch.hpp>
 #include <sstream>
-#include "scoped_ptr.hpp
-#include "scoped_ptr.cpp"
+#include "scoped_ptr.hpp"
 
 TEST_CASE("Get and *")
 {
