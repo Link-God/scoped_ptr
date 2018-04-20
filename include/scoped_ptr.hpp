@@ -43,8 +43,10 @@ template<typename T>
 	template<typename T>
 	T& scoped_ptr<T>:: operator*() const
 	{
-		/*if (ptr_)*/ return *ptr_;
-	}
+		/*if (ptr_)*/ return *ptr_;  // в тестах ббез этих комменттариев выдавал ошибку  
+						// из-за того что функция не вегда возвращала значение 
+						//control may reach end of non-void function во всех кросе gcc C++ (первые два)
+	
 
 	template<typename T>
 	T* scoped_ptr<T>::operator->() const
