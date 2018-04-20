@@ -51,7 +51,14 @@ template<typename T>
 	template<typename T>
 	T* scoped_ptr<T>::operator->() const
 	{
-		/*if (ptr_)*/ return ptr_;
+		try {
+			if (ptr_) return ptr_;
+			else throw 3;
+		}
+		catch (int)
+		{
+			std::cerr << "fail ";
+		}
 	}
 
 	template<typename T>
