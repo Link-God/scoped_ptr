@@ -16,7 +16,7 @@ public:
 	scoped_ptr(scoped_ptr const &) = delete;
 };
 
-strust X
+struct X
 {
 	int m ;
 };
