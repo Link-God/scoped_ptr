@@ -15,3 +15,8 @@ public:
 	scoped_ptr & operator=(scoped_ptr const &) = delete;
 	scoped_ptr(scoped_ptr const &) = delete;
 };
+
+strust X
+{
+	int m ;
+};
