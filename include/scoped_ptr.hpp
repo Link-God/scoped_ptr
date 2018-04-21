@@ -5,9 +5,9 @@ class scoped_ptr {
 private:
 	T * ptr_;
 public:
-	explicit scoped_ptr(T * ptr = 0);
+	explicit scoped_ptr(T * ptr = nullptr );
 	~scoped_ptr();
-	void reset(T * ptr = 0);
+	void reset(T * ptr = nullptr );
 	T & operator*() const;
 	T * operator->() const;
 	T * get() const;
@@ -30,7 +30,7 @@ template<typename T>
 	template<typename T>
 	scoped_ptr<T>::~scoped_ptr()
 	{
-		delete ptr_;
+		if (ptr_) delete ptr_;
 	}
 
 	template<typename T>
